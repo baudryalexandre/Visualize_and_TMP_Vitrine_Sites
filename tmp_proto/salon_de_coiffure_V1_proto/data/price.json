@@ -1,0 +1,62 @@
+{
+  "header": {
+    "nameEntreprise": "Nom de l'entreprise",
+    "logo": "logo entreprise",
+    "image": "image"
+  },
+  "section": {
+    "parafirst": "phrase pour adoucir les prix"
+  },
+  "category": {
+    "categorie1": "femme",
+    "service1femme": "service femme 1",
+    "service2femme": "service femme 2",
+    "service3femme": "service femme 3",
+    "service4femme": "service femme 4",
+    "service5femme": "service femme 5",
+    "service6femme": "service femme 6",
+    "service7femme": "service femme 7",
+    "price1femme": "price femme 1",
+    "price2femme": "price femme 2",
+    "price3femme": "price femme 3",
+    "price4femme": "price femme 4",
+    "price5femme": "price femme 5",
+    "price6femme": "price femme 6",
+    "price7femme": "price femme 7",
+    "categorie2": "homme",
+    "service1homme": "service homme 1",
+    "service2homme": "service homme 2",
+    "service3homme": "service homme 3",
+    "service4homme": "service homme 4",
+    "service5homme": "service homme 5",
+    "price1homme": "price enfant 1",
+    "price2homme": "price enfant 2",
+    "price3homme": "price enfant 3",
+    "price4homme": "price enfant 4",
+    "price5homme": "price enfant 5",
+    "categorie3": "enfant",
+    "service1enfant": "service1enfant",
+    "service2enfant": "service2enfant",
+    "service3enfant": "service3enfant",
+    "price1enfant": "price enfant 1",
+    "price2enfant": "price enfant 2",
+    "price3enfant": "price enfant 3",
+    "note": "note sur les tarifs"
+  },
+  "footer": {
+    "copydate": "Année",
+    "copyname": "Nom",
+    "adresse": "adresse de l'entreprise",
+    "telephone": "Numéro de telephone",
+    "mapping": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107459.63673365106!2d-6.357777818914555!3d53.27420266144507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ae9cfbedc71%3A0x739f008c8cef59f1!2sThe%20Hell%20Fire%20Club!5e0!3m2!1sfr!2sfr!4v1758628595307!5m2!1sfr!2sfr",
+    "horairelundi": "lundi de {heure} detailler",
+    "horairemardi": "mardi de {heure} detailler",
+    "horairemercredi": "mercredi de {heure} detailler",
+    "horairejeudi": "jeudi de {heure} detailler",
+    "horairevendredi": "vendredi de {heure} detailler",
+    "horairesamedi": "samedi de {heure} detailler",
+    "horairedimanche": "dimanche de {heure} detailler",
+    "reseausociaux1": "reseausociaux1",
+    "reseausociaux2": "reseausociaux2"
+  }
+}

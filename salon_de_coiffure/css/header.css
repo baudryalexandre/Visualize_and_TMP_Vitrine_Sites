@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Condensed';
+  src: url('../fonts/Times_New_Roman_MT_Condensed_Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html  {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #000;
+  line-height: 1.6;  
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #BE8445;
+}
+
+header .logo {
+  font-family: 'Condensed', sans-serif;
+  font-size: 3rem;
+  color: #BE8445;
+}
+
+.logo_image {
+  display: flex;
+  width: 45%;
+  height: auto;
+}
+
+.image {
+  width: 10%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #BE8445;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .team-cards,
+  .values-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .team-card,
+  .value-card {
+    width: 50%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .caption {
+    padding: 30px 15px;
+  }
+
+  .caption h1 {
+    font-size: 2rem;
+  }
+
+  .caption p {
+    font-size: 1rem;
+  }
+}

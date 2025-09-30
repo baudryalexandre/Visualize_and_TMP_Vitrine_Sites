@@ -1,0 +1,78 @@
+/* Hero section */
+.gallery-hero {
+  position: relative;
+  height: 450px;
+}
+
+.gallery-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-hero .overlay {
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.gallery-hero .caption {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.gallery-hero p {
+  font-size: 1.2rem;
+  color : #fff
+}
+
+/* Galerie grid */
+.gallery-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 2px solid #808080;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-hero h1 {
+    font-size: 2rem;
+  }
+  .gallery-hero p {
+    font-size: 1rem;
+  }
+}

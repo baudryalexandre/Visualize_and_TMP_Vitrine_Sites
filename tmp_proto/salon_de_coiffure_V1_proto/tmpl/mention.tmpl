@@ -1,0 +1,135 @@
+<!-- Header -->
+<header>
+    <div class="logo_image">
+        <img class="image" src="" alt="{{logo}}">
+        <div class="logo">{{nameEntreprise}}</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../html/about.html" class="active">À propos</a></li>
+            <li><a href="../html/services.html">Services</a></li>
+            <li><a href="../html/gallery.html">Galerie</a></li>
+            <li><a href="../html/avis.html">Avis</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">&#9776;</div>
+    </nav>
+</header>
+
+<!-- Hero section -->
+<section class="mention-hero">
+    <img src="" alt="{{image}}">
+    <div class="overlay"></div>
+    <div class="caption">
+        <h1>Mentions légales & Politique RGPD</h1>
+        <p>Document type pour le site du Salon. Remplacez les champs entre <code>[crochets]</code>.</p>
+    </div>
+</section>
+
+<!-- Mentions sections -->
+<section class="mention-section">
+
+    <div class="mention-category">
+        <h2>Identification de l'éditeur</h2>
+        <div class="content">
+            <p><strong>Nom du salon :</strong> [Nom du salon]</p>
+            <p><strong>Forme juridique :</strong> [SARL / SAS / Auto-entrepreneur / autre]</p>
+            <p><strong>Siège social :</strong> [Adresse complète]</p>
+            <p><strong>Numéro SIRET :</strong> [SIRET]</p>
+            <p><strong>Numéro de TVA intracom :</strong> [TVA intracom]</p>
+            <p><strong>Directeur de la publication :</strong> [Nom du dirigeant]</p>
+            <p><strong>Contact :</strong> Téléphone : <a href="tel:[num]">[num]</a>, Email : <a href="mailto:[email]">[email]</a></p>
+        </div>
+    </div>
+
+    <div class="mention-category">
+        <h2>Hébergeur</h2>
+        <div class="content">
+            <p><strong>Nom :</strong> [Nom de l'hébergeur]</p>
+            <p><strong>Adresse :</strong> [Adresse de l'hébergeur]</p>
+            <p><strong>Contact :</strong> Téléphone : [num hébergeur]</p>
+        </div>
+    </div>
+
+    <div class="mention-category">
+        <h2>Propriété intellectuelle</h2>
+        <div class="content">
+            <p>Le contenu du site (textes, images, logos) est la propriété exclusive du salon sauf mention contraire. Toute reproduction est interdite sans autorisation écrite.</p>
+        </div>
+    </div>
+
+    <div class="mention-category">
+        <h2>Politique RGPD</h2>
+        <div class="content">
+            <p><strong>1. Responsable de traitement :</strong> [Nom du salon] — Contact : <a href="mailto:[email-dpo]">[email-dpo]</a></p>
+            <p><strong>2. Finalités :</strong> Gestion des rendez-vous, administration, newsletters (si consentement), analyse du trafic.</p>
+            <p><strong>3. Base juridique :</strong> Exécution de contrat, consentement, obligation légale, intérêt légitime.</p>
+            <p><strong>4. Données collectées :</strong> Nom, prénom, téléphone, email, détails de rendez-vous, historique prestations, cookies.</p>
+            <p><strong>5. Destinataires :</strong> Personnel autorisé, sous-traitants (réservation, hébergeur, emailing) soumis au RGPD.</p>
+            <p><strong>6. Durée de conservation :</strong> Clients/rendez-vous : 5 ans, newsletters : jusqu'à révocation, logs/cookies : max 13 mois.</p>
+            <p><strong>7. Droits :</strong> Accès, rectification, effacement, limitation, opposition, portabilité, directives post-mortem. Contact : <a href="mailto:[email-dpo]">[email-dpo]</a>.</p>
+            <p><strong>8. Sécurité :</strong> Hébergement sécurisé, TLS, accès restreint, sauvegardes. Aucun transfert international sans garanties.</p>
+            <p><strong>9. Réclamations :</strong> Saisir la CNIL : <a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a></p>
+        </div>
+    </div>
+
+    <div class="mention-category">
+        <h2>Cookies et traceurs</h2>
+        <div class="content">
+            <p>Utilisation pour fonctionnement, analyse et, si consentement, personnalisation et publicité.</p>
+            <p><strong>Cookies nécessaires :</strong> Session, authentification, sécurisation.</p>
+            <p><strong>Cookies analytiques :</strong> Mesure d’audience, possibilité de s’opposer.</p>
+            <p><strong>Gestion :</strong> Accepter/refuser via bannière ou paramètres du navigateur.</p>
+        </div>
+    </div>
+
+    <div class="mention-category">
+        <h2>Mise à jour du document</h2>
+        <div class="content">
+            <p>Date de dernière modification : <strong>[JJ/MM/AAAA]</strong></p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="logo_footer">
+            <img src="" alt="{{logo}}">
+        </div>
+        <p>&copy; {{copydate}} Tous droits réservés | Créer par {{copyname}}</p>
+    </div>
+
+    <div class="information">
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📍 {{adresse}}</p>
+            <p>📞 {{telephone}}</p>
+        </div>
+
+        <div class="footer-map">
+            <h3>Nous trouver</h3>
+            <iframe src="{{mapping}}" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="footer-hours">
+            <h3>Horaires</h3>
+            <p>{{horairedimanche}} et {{horairelundi}}</p>
+            <p>{{horairemardi}}</p>
+            <p>{{horairemercredi}}</p>
+            <p>{{horairejeudi}}</p>
+            <p>{{horairevendredi}}</p>
+            <p>{{horairesamedi}}</p>
+        </div>
+
+        <div class="footer-socials">
+            <h3>Suivez-nous</h3>
+            <a href="#" target="_blank">{{reseausociaux1}}</a>
+            <a href="#" target="_blank">{{reseausociaux2}}</a>
+        </div>
+    </div>
+</footer>

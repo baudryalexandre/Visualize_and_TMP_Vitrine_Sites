@@ -1,0 +1,212 @@
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.slides .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%); /* hors écran à droite */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.slides .slide.active {
+  transform: translateX(0); /* slide visible */
+  opacity: 1;
+  z-index: 2;
+}
+
+.slides .slide.prev {
+  transform: translateX(-100%); /* slide sortant vers la gauche */
+  opacity: 0;
+}
+
+.slides img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+
+.slides img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.slides img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 20%; /* 50% horizontal (centre), 20% vertical (plus haut) */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.caption h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #BE8445;
+  margin-bottom: 15px;
+}
+
+.caption p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.caption .btn {
+  padding: 15px 40px;
+  background: #BE8445;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.caption .btn:hover {
+  background: #8B1D1D;
+  transform: translateY(-3px);
+}
+
+/* Présentation */
+.presentation {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.presentation h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #BE8445;
+}
+
+.presentation p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Services */
+.home-services {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #111;
+}
+
+.home-services h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #BE8445;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #BE8445;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-slider {
+    height: 450px;
+  }
+
+  .slides img {
+    height: 450px;
+  }
+
+  .caption h1 {
+    font-size: 2rem;
+  }
+}

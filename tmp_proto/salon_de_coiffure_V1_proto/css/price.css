@@ -1,0 +1,154 @@
+    /* Hero section */
+    .pricing-hero {
+        position: relative;
+        height: 400px;
+    }
+
+    .pricing-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pricing-hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .pricing-hero .caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .pricing-hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .pricing-hero p {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    /* Pricing sections */
+    .pricing-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .pricing-category {
+        margin-bottom: 80px;
+    }
+
+    .pricing-category h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .pricing-table {
+        background: linear-gradient(145deg, #111 0%, #1a1a1a 100%);
+        border: 2px solid #808080;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(119, 119, 119, 0.3);
+    }
+
+    .pricing-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .pricing-item:last-child {
+        border-bottom: none;
+    }
+
+    .pricing-item .service {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    .pricing-item .price {
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .note {
+        background-color: rgba(131, 131, 131, 0.1);
+        border-left: 4px solid #808080;
+        padding: 20px;
+        margin: 30px 0;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .note p {
+        margin: 0;
+        font-style: italic;
+        color: #646464;
+    }
+
+    .booking-cta {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #111;
+    }
+
+    .booking-cta h2 {
+        font-family: 'Playfair Display', serif;
+        color: #808080;
+        margin-bottom: 20px;
+    }
+
+    .booking-cta .btn {
+        margin-top: 1%;
+        display: inline-block;
+        padding: 15px 40px;
+        background: #808080;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .booking-cta .btn:hover {
+        background: #808080;
+        transform: translateY(-3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .pricing-hero h1 {
+            font-size: 2rem;
+        }
+
+        .pricing-hero p {
+            font-size: 1rem;
+        }
+
+        .pricing-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .pricing-table {
+            padding: 20px;
+        }
+    }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALON DE COIFFURE</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo_image">
+      <img class="image" src="./images/logo_solo.png" alt="image de ciseaux et peigne">
+      <div class="logo">SALON DE COIFFURE</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="./html/about.html">À propos</a></li>
+        <li><a href="./html/services.html">Services</a></li>
+        <li><a href="./html/gallery.html">Galerie</a></li>
+        <li><a href="./html/avis.html">Avis</a></li>
+        <li><a href="./html/price.html">Tarifs</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
+
+      </ul>
+      <div class="burger" id="burger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero-slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="./images/femme_2.jpg" alt="Salon chic et élégant">
+        <div class="overlay"></div>
+        <div class="caption">
+          <h1>Bienvenue chez SALON DE COIFFURE</h1>
+          <p>Une expérience coiffure élégante pour toute la famille</p>
+          <a href="contact.html" class="btn">Réservez votre rendez-vous</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./images/homme_2.jpg" alt="Coiffure femme moderne">
+        <div class="overlay"></div>
+        <div class="caption">
+          <h1>Coupe & style</h1>
+          <p>Femme, homme et enfant</p>
+          <a href="contact.html" class="btn">Réservez maintenant</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./images/enfant.jpg" alt="Coloration professionnelle">
+        <div class="overlay"></div>
+        <div class="caption">
+          <h1>Coloration & soins</h1>
+          <p>Professionnalisme et créativité</p>
+          <a href="contact.html" class="btn">Prenez rendez-vous</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Points -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+
+  <!-- Présentation -->
+  <section class="presentation">
+    <h2>Un salon chic et raffiné</h2>
+    <p>Chez SALON DE COIFFURE, nous mettons notre passion et notre expertise au service de votre style. Des coupes
+      modernes aux soins professionnels, nous accueillons toute la famille dans une ambiance chaleureuse et élégante.
+    </p>
+  </section>
+
+  <!-- Services rapides -->
+  <section class="home-services">
+    <h2>Nos Services</h2>
+    <div class="services-cards">
+      <div class="card">
+        <h3>Coupe</h3>
+        <p>Pour femmes, hommes et enfants</p>
+      </div>
+      <div class="card">
+        <h3>Coloration</h3>
+        <p>Balayage, mèches et couleurs tendances</p>
+      </div>
+      <div class="card">
+        <h3>Soins</h3>
+        <p>Masques, shampoings et traitements professionnels</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo_footer">
+        <img src="./images/logo_solo.png"  alt="logo">
+      </div>
+      <p>&copy; 2025 Tous droits réservés | Créer par Alexandre BAUDRY</p>
+    </div>
+
+    <div class="information">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>📍 Mountpelier, Co. Dublin, Irlande</p>
+        <p>📞 +35312011187</p>
+      </div>
+
+      <div class="footer-map">
+        <h3>Nous trouver</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107459.63673365106!2d-6.357777818914555!3d53.27420266144507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ae9cfbedc71%3A0x739f008c8cef59f1!2sThe%20Hell%20Fire%20Club!5e0!3m2!1sfr!2sfr!4v1758628595307!5m2!1sfr!2sfr"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="footer-hours">
+        <h3>Horaires</h3>
+        <p>Dimanche et Lundi fermé</p>
+        <p>Mardi De 09:00 à 19:00</p>
+        <p>Mercredi De 09:00 à 19:00</p>
+        <p>Jeudi De 09:00 à 21:00</p>
+        <p>Venderdi De 09:00 à 19:00</p>
+        <p>Samedi De 09:00 à 19:00</p>
+      </div>
+
+      <div class="footer-socials">
+        <h3>Suivez-nous</h3>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

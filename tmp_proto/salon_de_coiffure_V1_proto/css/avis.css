@@ -1,0 +1,191 @@
+/* Hero */
+.avis-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.avis-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  /* 50% horizontal (centre), 20% vertical (plus haut) */
+  filter: brightness(0.5);
+
+}
+
+.avis-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.avis-hero .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.avis-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #000;
+}
+
+.avis-hero p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+/* Section avis */
+.avis-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.avis-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Cartes avis */
+.testimonial {
+  background: linear-gradient(145deg, #111 0%, #1a1a1a 100%);
+  border: 2px solid #808080;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(8, 8, 8, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.testimonial h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.testimonial .rating {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formulaire */
+.review-form {
+  background-color: rgba(17, 17, 17, 0.9);
+  border: 2px solid #808080;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(8, 8, 8, 0.4);
+}
+
+.review-form h2 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #808080;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.review-form textarea {
+  resize: none;
+}
+
+.review-form button {
+  background: linear-gradient(90deg, #000 0%, #fff 100%);
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.review-form button:hover {
+  background: linear-gradient(90deg, #fff 0%, #000 100%);
+  transform: scale(1.05);
+}
+
+/* Étoiles cliquables */
+.rating-input {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.rating-input span {
+  font-size: 1.8rem;
+  color: #555;
+  /* étoiles non sélectionnées */
+  transition: color 0.2s;
+}
+
+/* étoiles déjà sélectionnées */
+.rating-input span.selected {
+  color: #d3d3d3;
+  /* jaune */
+}
+
+/* étoiles survolées / nouvelle sélection */
+.rating-input span.hover {
+  color: #6e6e6e;
+  /* bleu pour différencier */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .avis-hero h1 {
+    font-size: 2rem;
+  }
+
+  .avis-hero p {
+    font-size: 1rem;
+  }
+
+  .review-form {
+    width: 90%;
+  }
+}

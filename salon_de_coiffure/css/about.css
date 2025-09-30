@@ -1,0 +1,194 @@
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.about-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-hero .caption h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #BE8445;
+  margin-bottom: 10px;
+}
+
+.about-hero .caption p {
+  font-size: 1.2rem;
+}
+
+.caption {
+  background-color: #111;
+  /* fond sombre pour contraster */
+  color: #fff;
+  padding: 50px 20px;
+  max-width: 90%;
+  margin: 50px auto;
+  border-radius: 15px;
+  border: 2px solid #BE8445;
+  /* bordure rouge chic */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+/* Titres principaux */
+.caption h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #BE8445;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraphes */
+.caption p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/* Sous-titres en majuscules */
+.caption p b,
+.caption p strong {
+  color: #BE8445;
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Équipe */
+.team {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #BE8445;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  color: #BE8445;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #fff;
+}
+
+/* Valeurs */
+.values {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.values h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #BE8445;
+  margin-bottom: 40px;
+}
+
+.values-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  background-color: #000;
+  padding: 25px;
+  border: 2px solid #BE8445;
+  border-radius: 15px;
+  width: 22%;
+}
+
+.value-card h3 {
+  color: #BE8445;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .team-cards,
+  .values-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .team-card,
+  .value-card {
+    width: 50%;
+  }
+
+  .caption p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SALON DE COIFFURE</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header commun -->
+  <header>
+    <div class="logo_image">
+      <img class="image" src="../images/logo_solo.png" alt="image de ciseaux et peigne">
+      <div class="logo">SALON DE COIFFURE</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="avis.html">Avis</a></li>
+        <li><a href="price.html">Tarifs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+
+      </ul>
+      <div class="burger" id="burger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="contact-hero">
+    <img src="../images/contact_bg.jpg" alt="Contactez le salon">
+    <div class="overlay"></div>
+    <div class="caption">
+      <h1>Contactez-nous</h1>
+      <p>Une question ou une réservation ? Remplissez le formulaire ci-dessous.</p>
+    </div>
+  </section>
+
+  <!-- Formulaire de contact -->
+  <section class="contact-form-section">
+    <form id="contactForm">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Sujet :</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo_footer">
+        <img src="../images/logo_solo.png" alt="logo">
+      </div>
+      <p>&copy; 2025 Tous droits réservés | Créer par Alexandre BAUDRY</p>
+    </div>
+
+    <div class="information">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>📍 Mountpelier, Co. Dublin, Irlande</p>
+        <p>📞 +35312011187</p>
+      </div>
+
+      <div class="footer-map">
+        <h3>Nous trouver</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107459.63673365106!2d-6.357777818914555!3d53.27420266144507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ae9cfbedc71%3A0x739f008c8cef59f1!2sThe%20Hell%20Fire%20Club!5e0!3m2!1sfr!2sfr!4v1758628595307!5m2!1sfr!2sfr"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="footer-hours">
+        <h3>Horaires</h3>
+        <p>Dimanche et Lundi fermé</p>
+        <p>Mardi De 09:00 à 19:00</p>
+        <p>Mercredi De 09:00 à 19:00</p>
+        <p>Jeudi De 09:00 à 21:00</p>
+        <p>Venderdi De 09:00 à 19:00</p>
+        <p>Samedi De 09:00 à 19:00</p>
+      </div>
+
+      <div class="footer-socials">
+        <h3>Suivez-nous</h3>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>
